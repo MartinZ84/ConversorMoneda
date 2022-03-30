@@ -46,14 +46,16 @@ public class MainActivity extends AppCompatActivity {
                 float valor;
                 float resultado;
                 if (rbADolares.isChecked()) {
+
                     valor=Float.parseFloat(etEuro.getText().toString());
                     resultado = (float) (valor * 1.11);
-                    etEuro.setText(resultado+"");
-                } else {
+                    etDolar.setText(resultado+"");
+                } else if(rbAEuros.isChecked()){
                     valor=Float.parseFloat(etDolar.getText().toString());
                     resultado = (float) (valor * 0.9);
-                    etDolar.setText(resultado+"");
+                    etEuro.setText(resultado+"");
                 }
+
             }
         });
 

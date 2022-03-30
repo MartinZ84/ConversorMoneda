@@ -46,6 +46,7 @@
         android:inputType="textPersonName"
         android:layout_below="@+id/tvEuro"
         android:layout_alignLeft="@+id/tvEuro"
+        android:focusable="true"
         android:text="" />
 
     <TextView
